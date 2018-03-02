@@ -1,28 +1,28 @@
 <p>
-  <strong>Title:</strong>
+  <strong><%= t('.title') %>:</strong>
   <%= @article.title %>
 </p>
  
 <p>
-  <strong>Text:</strong>
+  <strong><%= t('.text') %>:</strong>
   <%= @article.text %>
 </p>
 
 <p>
-  <strong>Author name:</strong>
+  <strong><%= t('.author_name') %>:</strong>
   <%= @article.author_name %>
 </p>
 
 <p>
-  <strong>State:</strong>
+  <strong><%= t('.state') %>:</strong>
   <%= @article.state %>
 </p>
 
-<h2>Comments</h2>
+<h2><%= t('.commentsTitle') %></h2>
 <%= render @article.comments %>
 
-<h2>Add a comment:</h2>
+<h2><%= t('.addComment') %>:</h2>
 <%= render 'comments/form' %>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<%= link_to t('articles.default.edit'), edit_article_path(@article) %> |
+<%= link_to t('articles.default.back'), articles_path %>

@@ -30,4 +30,40 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "Hello, Rails"
+  myBlogLink: "My Blog"
+  showLink: "Show"
+  back: "Back"
+  helpers:
+    label:
+      article:
+        state: "State"
+        title: "Title"
+        text: "Text"
+        author_name: "Author name"
+  articles:
+    default:
+      edit: "Edit"
+      back: "Back"
+    index:
+      header: "Listing articles"
+      newArticle: "New article"
+      title: "Title"
+      text: "Text"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
+      confirm: "Are you sure?"
+    new:
+      header: "New Article"
+      back: "Back"
+    show:
+      title: "Title"
+      text: "Text"
+      author_name: "Author name"
+      state: "State"
+      commentsTitle: "Comments"
+      addComment: "Add a comment"
+    edit:
+      title: "Edit article"
+
