@@ -13,7 +13,12 @@
         </ul>
       </div>
     <% end %>
-   
+
+    <p>
+      <%= form.label :state %><br>
+      <%= select(:article, :state, [%w(Draft draft), %w(Published published)]) %>
+    </p>
+
     <p>
       <%= form.label :title %><br>
       <%= form.text_field :title %>
