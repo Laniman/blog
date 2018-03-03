@@ -32,3 +32,5 @@ table
         = link_to t('.destroy'), article_path(article),
                 method: :delete,
                 data: { confirm: t('.confirm') }
+
+= paginate @articles

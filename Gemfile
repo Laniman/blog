@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'validates_email_format_of'
 gem 'slim-rails'
 gem 'ransack'
+gem 'kaminari'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

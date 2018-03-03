@@ -5,8 +5,8 @@ class ArticlesController < ApplicationController
 
     def index
         @q = Article.ransack(params[:q])
-        @articles = @q.result(distinct: true)
-      end
+        @articles = @q.result(distinct: true).page(params[:page]).per(2)
+    end
 
     def show
         @article = Article.find(params[:id])
