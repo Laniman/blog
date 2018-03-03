@@ -25,6 +25,7 @@ h2
   = t('.addComment')
   | :
 = render 'comments/form'
-= link_to t('articles.default.edit'), edit_article_path(@article)
-|  | 
-= link_to t('articles.default.back'), articles_path
+.
+  = link_to t('articles.default.edit'), edit_article_path(@article)
+  '  |
+  = link_to t('articles.default.back'), articles_path
