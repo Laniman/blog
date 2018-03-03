@@ -4,10 +4,10 @@ one:
   title: MyString
   text: MyText
   author_name: MyText
-  state: 'draft'
+  state: draft
 
 two:
   title: MyString
   text: MyText
   author_name: MyText
-  state: 'published'
+  state: published
