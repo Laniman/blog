@@ -1,12 +1,19 @@
 h1
   = t('.header')
 = link_to t('.newArticle'), new_article_path
+
+= search_form_for @q do |f|
+  = f.label :title_cont
+  = f.search_field :title_cont
+  = f.select :state_cont, options_for_select([%w(Draft draft), %w(Published published)], @q.state_cont)
+  = f.submit
+
 table
   tr
     th
-      = t('.title')
+      = sort_link(@q, :title)
     th
-      = t('.text')
+      = sort_link(@q, :text)
   - @articles.each do |article|
     tr
       td
