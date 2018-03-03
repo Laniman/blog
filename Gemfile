@@ -33,6 +33,7 @@ gem 'validates_email_format_of'
 gem 'slim-rails'
 gem 'ransack'
 gem 'kaminari'
+gem 'bootstrap', '~> 4.0.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
